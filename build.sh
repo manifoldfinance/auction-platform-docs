@@ -11,8 +11,6 @@ header "Loading Build Enviornment...\n"
 
 pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
 pip3 install -r requirements.txt
-npm install
-
 
 mkdocs build --clean  --site-dir site/
 mkdir -p site/.well-known
