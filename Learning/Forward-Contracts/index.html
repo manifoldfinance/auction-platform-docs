@@ -6,35 +6,37 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Gang Designs the Ultimate MEV Auction">
+        <meta name="description" content="Forward Contracts in the Primary market">
       
       
         <meta name="author" content="MEV.io">
       
       
-        <link rel="canonical" href="https://mevauction.com/">
+        <link rel="canonical" href="https://mevauction.com/Learning/Forward-Contracts/">
       
       
+        <link rel="prev" href="../aup_auction/">
       
-        <link rel="next" href="Developers/">
+      
+        <link rel="next" href="../../Clients/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18+insiders-4.53.6">
     
     
       
-        <title>MEV Auction Platform - MEV Auction</title>
+        <title>Forward Contracts - MEV Auction</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.d5b5f0fd.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d5b5f0fd.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mev-auction" class="md-skip">
+        <a href="#forward-contracts" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +97,7 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   This documentation is not for the latest stable version of MEV Auction.
-  <a href=".././latest-release/">
+  <a href="../../../latest-release/">
     <strong>Click here for the latest release documentation.</strong>
   </a>
 
@@ -112,7 +114,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MEV Auction" class="md-header__button md-logo" aria-label="MEV Auction" data-md-component="logo">
+    <a href="../.." title="MEV Auction" class="md-header__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -132,7 +134,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MEV Auction Platform
+              Forward Contracts
             
           </span>
         </div>
@@ -233,11 +235,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -256,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Developers/" class="md-tabs__link">
+        <a href="../../Developers/" class="md-tabs__link">
           
   
     
@@ -272,11 +272,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Learning/flashbots-comparison/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../flashbots-comparison/" class="md-tabs__link">
           
   
     
@@ -296,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Clients/" class="md-tabs__link">
+        <a href="../../Clients/" class="md-tabs__link">
           
   
     
@@ -316,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Relay/" class="md-tabs__link">
+        <a href="../../Relay/" class="md-tabs__link">
           
   
     
@@ -336,7 +338,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="api/" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
     
@@ -356,7 +358,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Reference/contract_design/" class="md-tabs__link">
+        <a href="../../Reference/contract_design/" class="md-tabs__link">
           
   
     
@@ -376,7 +378,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Legal/" class="md-tabs__link">
+        <a href="../../Legal/" class="md-tabs__link">
           
   
     
@@ -419,7 +421,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction" data-md-component="logo">
+    <a href="../.." title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -446,36 +448,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,143 +466,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#block-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Block Structure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Block Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#-blockspace" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⍺-blockspace
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#-blockspace_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        β-blockspace
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#elastic-supply-schedule" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Elastic Supply Schedule
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-these-changes-matter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why These Changes Matter
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Why These Changes Matter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#shortcomings-of-the-standard-uniform-price-auction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Shortcomings of the standard uniform price auction
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tie-breaking-rule" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tie Breaking Rule
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tie Breaking Rule">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#elastic-supply-curve-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Elastic Supply Curve Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#footnotes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Footnotes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -671,7 +510,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Developers/" class="md-nav__link ">
+            <a href="../../Developers/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -714,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Developers/interface/" class="md-nav__link">
+      <a href="../../Developers/interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -741,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Developers/builders/" class="md-nav__link">
+      <a href="../../Developers/builders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Developers/testnet/" class="md-nav__link">
+      <a href="../../Developers/testnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Developers/payment-methods/" class="md-nav__link">
+      <a href="../../Developers/payment-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Developers/sdk/" class="md-nav__link">
+      <a href="../../Developers/sdk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,8 +692,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -867,19 +708,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -896,7 +740,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -914,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Learning/flashbots-comparison/" class="md-nav__link">
+      <a href="../flashbots-comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Learning/aup_auction/" class="md-nav__link">
+      <a href="../aup_auction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,10 +809,34 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Learning/Forward-Contracts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    Forward Contracts
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -983,6 +851,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forward-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forward Contracts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forward Contracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nature-of-the-forwards-to-be-sold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nature of the Forwards to be sold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bidder-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bidder characteristics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-to-the-secondary-market" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relation to the secondary market
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1035,7 +971,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Clients/" class="md-nav__link ">
+            <a href="../../Clients/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1078,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Clients/clients/" class="md-nav__link">
+      <a href="../../Clients/clients/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Clients/validators/" class="md-nav__link">
+      <a href="../../Clients/validators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1132,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Clients/configuration/" class="md-nav__link">
+      <a href="../../Clients/configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Clients/accounting/" class="md-nav__link">
+      <a href="../../Clients/accounting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1186,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Clients/relay/" class="md-nav__link">
+      <a href="../../Clients/relay/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1247,7 +1183,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Relay/" class="md-nav__link ">
+            <a href="../../Relay/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1290,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Relay/captive-insurance/" class="md-nav__link">
+      <a href="../../Relay/captive-insurance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1384,7 +1320,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="api/" class="md-nav__link ">
+            <a href="../../api/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1427,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/relay/" class="md-nav__link">
+      <a href="../../api/relay/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1454,7 +1390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/self-report/" class="md-nav__link">
+      <a href="../../api/self-report/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1481,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/beta-auction/" class="md-nav__link">
+      <a href="../../api/beta-auction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1508,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/bundle/" class="md-nav__link">
+      <a href="../../api/bundle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1535,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/signature-scheme/" class="md-nav__link">
+      <a href="../../api/signature-scheme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1633,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Reference/contract_design/" class="md-nav__link">
+      <a href="../../Reference/contract_design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1660,7 +1596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Reference/contract_summary/" class="md-nav__link">
+      <a href="../../Reference/contract_summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Reference/glossary/" class="md-nav__link">
+      <a href="../../Reference/glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1714,7 +1650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Reference/rpc-payload/" class="md-nav__link">
+      <a href="../../Reference/rpc-payload/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1741,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Reference/constants/" class="md-nav__link">
+      <a href="../../Reference/constants/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1768,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Reference/erc6909/" class="md-nav__link">
+      <a href="../../Reference/erc6909/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1831,7 +1767,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Legal/" class="md-nav__link ">
+            <a href="../../Legal/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1874,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Legal/CDD/" class="md-nav__link">
+      <a href="../../Legal/CDD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1901,7 +1837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Legal/Content-Disclaimer/" class="md-nav__link">
+      <a href="../../Legal/Content-Disclaimer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1928,7 +1864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Legal/Disclosure-Statement/" class="md-nav__link">
+      <a href="../../Legal/Disclosure-Statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1973,6 +1909,44 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../flashbots-comparison/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Learning
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1983,111 +1957,79 @@
   
 
 
-<h1 id="mev-auction">MEV Auction<a class="headerlink" href="#mev-auction" title="Permanent link">&para;</a></h1>
-<p>Multi-unit auctions, unlike their single-unit counterparts, present complex
-allocation mechanisms. The MEV Auction platform implements several innovative
-strategies:</p>
-<ol>
-<li>An enhanced uniform price auction,</li>
-<li>A Bifurcated Block Structure (splitting the block into halves),</li>
-<li>Elastic Supply Scheduling,</li>
-<li>Contract based bidding.</li>
-<li>Backwards compatible with MEV-Boost</li>
-<li>Exclusive Relay endpoint for Validator usage</li>
-</ol>
-<h2 id="block-structure">Block Structure<a class="headerlink" href="#block-structure" title="Permanent link">&para;</a></h2>
-<p>We divide a block in two parts: ⍺-blockspace and β-blockspace</p>
-<p><code>⍺-blockspace</code> is a very time sensitive kind of priority transactions. These
-transactions often come in last second.</p>
-<p><code>β-blockspace</code> however can be considered non-priority sensitive, meaning it is
-not very time sensitive, hence can be priced differently.</p>
-<h3 id="-blockspace">⍺-blockspace<a class="headerlink" href="#-blockspace" title="Permanent link">&para;</a></h3>
+  <h1>Forward Contracts</h1>
+
+<h2 id="forward-contracts">Forward Contracts<a class="headerlink" href="#forward-contracts" title="Permanent link">&para;</a></h2>
+<h3 id="nature-of-the-forwards-to-be-sold">Nature of the Forwards to be sold<a class="headerlink" href="#nature-of-the-forwards-to-be-sold" title="Permanent link">&para;</a></h3>
+<p>The embedded volumetric optionality is primarily intended, at the time that the
+parties enter into the agreement, contract, or transaction, to address
+constraint factors that influence demand for transaction inclusion rights (i.e.
+blockspace). This instrument addresses the potential variability in the supply
+of available blockspace available for usage by different actors.</p>
+<p>The options refer to slices of the overall gas size of β-blockspace. We aim to
+homogenize it, i.e. all slices of gas are equal and interchangeable. This is how
+the forward contract is exercised.</p>
+<p>The nature of the forwards we are selling under the β-blockspace market depends
+on the capacity restriction we impose. Most importantly, do we guarantee enough
+capacity that the calls get included or not? The problem with guaranteeing a
+fixed capacity for β-blockspace is that this means restricting the capacity for
+⍺-blockspace. The problem with this is that ⍺-blockspace might be more lucrative
+for us. In particular, we know that lottery blocks come along that make up a
+large chunk of the overall remuneration we can achieve at all.</p>
+<div class="admonition info">
+<p class="admonition-title">Figure 1: Tradeoff of ⍺/β-blockspace</p>
+<p>If we fix ⍺-blockspace, we might be missing a significant amount of value. The tradeoff can be seen in the picture below.</p>
+</div>
+<p><img alt="tradeoff-⍺-vs-β-blockspace" src="../../assets/images/illustration-tradeoff-alpha-beta.png" /></p>
+<p>We make the assumption that top of the block gas space is more valuable. The
+main assumption is that at some point, the marginal value for a builder owning
+the whole block (green) goes below the marginal value of a β-blockspace buyer
+(typically someone who wants to be just included independently of the order).</p>
+<p>If we had perfect information, we could fix the capacity constraint at exactly
+the intersection point. But this information is not available. We can only
+approximate it. The question of lottery blocks can also be seen in the diagram,
+the question is whether for such a block both curves are shifted in the same
+way. If not, it would indicate the need to give ⍺-blockspace builders more space
+relative to β-blockspace builders.</p>
+<!-- There is another aspect to consider. The larger the ⍺-blockspace part, the
+larger the possibility of including a txs in β-blockspace that will revert (due to state changes). This will
+degrade the value of the option to buy β-blockspace space. What is more, this might jeopardize the service
+as a whole. If builders get the impression that the service is not of sufficient quality, then they
+will stop using it. So there is also a reputation component - in particular at the beginning.
+-->
+
+<h3 id="bidder-characteristics">Bidder characteristics<a class="headerlink" href="#bidder-characteristics" title="Permanent link">&para;</a></h3>
+<div class="admonition info inline">
+<p class="admonition-title">Assumption of Intrablock Position</p>
+<p>We operate under the assumption that position does not matter; if it does might affect the design
+significantly.</p>
+</div>
 <ul>
-<li><code>⍺-blockspace</code> - represents the top part of the blockspace. Economically,
-    this is where competitive searchers want to place their transactions (e.g.
-    for arbitrages etc.).<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
-</ul>
-<h3 id="-blockspace_1">β-blockspace<a class="headerlink" href="#-blockspace_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>β-blockspace</code> - represents the rest of the blockspace. Economically, this
-    is where low-priority transactions - direct transfers, low volume swaps,
-    some kind of intents, etc. - would go. The rationale for this is simple:
-    <code>above</code> and below represent two very different markets: The first serves
-    strategic actors, whereas the second serves 'everyone else' - people not
-    interested in speculation that just want to transact, e.g., to pay for
-    stuff.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
-</ul>
-<pre class="mermaid"><code>gantt
-    title Future auction for `below`
-    dateFormat YY-MM
-    axisFormat %m
-    tickInterval 1month
-    section Epoch i
-        We know slots for Epoch i+2 are 03,08 and 11 : crit, done, milestone, 00-01, 1m
-        Auction for `below`, slots 03,08,11 : 00-01, 6M
-        Futures awarded : milestone, 00-07, 1m
-        Users can transact: active, 00-07, 6M
-    section Epoch i+1
-        Users can transact: active, 01-01, 12M
-    section Epoch i+2
-        Slot 03, future can be used : crit, active, milestone, 02-03, 1
-        Slot 08, future can be used : crit, active, milestone, 02-08, 1
-        Slot 11, future can be used : crit, active, milestone, 02-11, 1</code></pre>
-<p>The Auction platform uses the <a href="https://securerpc.com">SecureRPC.com</a> relay, in
-which permissioned validator sets use exclusively. As such, we will know 2
-epochs in advance in which slots we will mint a block. So, we can sell that
-blockspace about 2 epochs in advance, providing a forward contract market for
-β-blockspace.</p>
-<h3 id="elastic-supply-schedule">Elastic Supply Schedule<a class="headerlink" href="#elastic-supply-schedule" title="Permanent link">&para;</a></h3>
-<p><strong>Elastic Supply Schedule</strong>: Breaking away from the rigidness of a fixed supply,
-we're introducing elasticity. When prices dip low, we'll strategically limit the
-availability of options. This dynamic approach ensures a balance between supply
-and demand, maintaining value and interest.</p>
-<p><strong>Revamped Tie-Breaking Rule</strong>: In the world of auctions, ties are inevitable.
-But our approach is different. We're moving away from the conventional method
-that prioritizes higher marginal bids. Instead, we're implementing a novel rule
-that intensifies competition, particularly for those crucial marginal
-quantities.</p>
-<h2 id="why-these-changes-matter">Why These Changes Matter<a class="headerlink" href="#why-these-changes-matter" title="Permanent link">&para;</a></h2>
-<h3 id="shortcomings-of-the-standard-uniform-price-auction">Shortcomings of the standard uniform price auction<a class="headerlink" href="#shortcomings-of-the-standard-uniform-price-auction" title="Permanent link">&para;</a></h3>
-<p>Traditionally, with a fixed supply, there's a looming risk of plummeting prices.
-This phenomenon, identified by Wilson in 1979, highlights a bidder's tendency to
-underbid. In multi-unit auctions, this is a critical challenge. In a uniform
-price auction, underbidding on the marginal unit doesn't just lower the price
-for that unit; it slashes the overall price you pay.</p>
-<p>The real danger of severe under-pricing hinges on demand factors, which are
-often unpredictable and not easily deduced from existing data. The debate over
-whether discriminatory or uniform price auctions yield higher revenue remains
-unresolved, both theoretically (as discussed by <em>Ausubel</em> et al. 2011) and
-empirically.</p>
-<h3 id="tie-breaking-rule">Tie Breaking Rule<a class="headerlink" href="#tie-breaking-rule" title="Permanent link">&para;</a></h3>
-<p>The traditional tie-breaking rule, which prioritizes higher marginal bids, is
-inherently flawed. It doesn't account for the strategic value of the marginal
-unit. This is particularly problematic in multi-unit auctions, where the
-marginal unit is often the most valuable. The current rule fails to capture the
-true value of the marginal unit, leading to suboptimal outcomes. This is due to
-the discrete nature of bids, it can happen that there is market-clearing price
-(where demand=supply). The typical rule applied in many auctions favors high
-marginal bids first. We will consider an alternative that introduces more
-pressure at the quantity at the margin.</p>
-<h4 id="elastic-supply-curve-details">Elastic Supply Curve Details<a class="headerlink" href="#elastic-supply-curve-details" title="Permanent link">&para;</a></h4>
-<p>Maximum capacity is fixed, but the supply curve</p>
-<div class="arithmatex">\[ S:P→Q \]</div>
-<p>varies with price, offering different quantities of options.</p>
-<p>The supply function is designed to be initially concave, then constant at
-maximum capacity. This approach, theoretically supported by Licalzi (2005), aims
-to mitigate dramatic underpricing.</p>
-<h3 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h3>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Previously this was called 'above'&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<li>
+<p><strong>Bidders are possibly risk-averse</strong>: Standard revenue equivalence might go
+    out of the window. Bidders are asymmetric; in particular if there is private
+    orderflow.</p>
 </li>
-<li id="fn:2">
-<p>Previously this was called 'below'&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<li>
+<p><strong>Bidders valuations are not clear</strong>: If they draw from a public mempool or
+    if there are global conditions affecting value of block space, their
+    valuations will be interdependent. - There is also the danger of a further
+    coordination issue; this might favor a winner-takes-all solution</p>
 </li>
-</ol>
+</ul>
+<h2 id="relation-to-the-secondary-market">Relation to the secondary market<a class="headerlink" href="#relation-to-the-secondary-market" title="Permanent link">&para;</a></h2>
+<p>Traditionally we would assume that a well-designed auction does not require a
+secondary market. If the result of the auction is in the core, no change in the
+allocation makes sense. This is different here as information comes in
+overtime. - Base fee - Transactions updates for ⍺-blockspace bidders We operate
+under the assumption that position does not matter; if it does might affect the
+design significantly.</p>
+<p>New bidders are active on the secondary market. The secondary market therefore
+is not just a reallocation of the primary auction but includes information
+updates.</p>
+<div class="admonition note">
+<p class="admonition-title">Secondary Market Effects</p>
+<p>This is in contrast to most work on auctions with resale (re: secondary) markets. The secondary market changes the rationale for bidding in the primary auction</p>
 </div>
 
 
@@ -2128,15 +2070,31 @@ to mitigate dramatic underpricing.</p>
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../aup_auction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auction Design">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Auction Design
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="Developers/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started">
+          <a href="../../Clients/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Getting Started
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2178,10 +2136,10 @@ to mitigate dramatic underpricing.</p>
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["toc.follow", "toc.integrate", "content.footnote.tooltips", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetchn", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "toc.integrate", "content.footnote.tooltips", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetchn", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.e1f28405.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e1f28405.min.js"></script>
       
     
   </body>

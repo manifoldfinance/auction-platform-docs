@@ -1,7 +1,0 @@
----
-title: Contributing Notes and Guidelines
----
-
-
-For API Development Guidelines see:
-https://github.com/microsoft/api-guidelines/blob/vNext/graph/GuidelinesGraph.md

@@ -1,148 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://mevauction.com/index.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/index.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Clients/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/auctioneer.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Clients/accounting/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/interface.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Clients/clients/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/sdk.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Clients/configuration/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/testnet.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Clients/relay/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/aup_auction.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Clients/validators/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/flashbots-comparison.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Developers/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/payment-methods.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Developers/builders/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/primary-market.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Developers/interface/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/rulebook.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Developers/payment-methods/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/secondary-market.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Developers/sdk/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Legal/index.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Developers/testnet/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/SUMMARY.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Learning/Forward-Contracts/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/compare.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Learning/aup_auction/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/contract_design.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Learning/flashbots-comparison/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/contract_summary.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Learning/secondary-market/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/erc6909.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Legal/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/glossary.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Legal/CDD/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/rpc-payload.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Legal/Content-Disclaimer/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Relay/captive-insurance.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Legal/Disclosure-Statement/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Validators/index.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Reference/constants/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Validators/accounting.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Reference/contract_design/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Validators/relay.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Reference/contract_summary/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/index.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Reference/erc6909/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/beta-auction.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Reference/glossary/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/bundle.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Reference/rpc-payload/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/relay.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Relay/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/signature-scheme.html</loc>
-         <lastmod>2024-03-29</lastmod>
+         <loc>https://mevauction.com/Relay/captive-insurance/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/beta-auction/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/bundle/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/relay/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/self-report/</loc>
+         <lastmod>2024-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/signature-scheme/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

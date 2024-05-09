@@ -12,20 +12,20 @@
         <meta name="author" content="MEV.io">
       
       
-        <link rel="canonical" href="https://mevauction.com/api/index.html">
+        <link rel="canonical" href="https://mevauction.com/api/">
       
       
-        <link rel="prev" href="../Relay/captive-insurance.html">
+        <link rel="prev" href="../Relay/captive-insurance/">
       
       
-        <link rel="next" href="relay.html">
+        <link rel="next" href="relay/">
       
       
         
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12+insiders-4.53.0">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18+insiders-4.53.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.458d28d0.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d5b5f0fd.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -50,12 +50,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CIBM+Plex+Sans:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"IBM Plex Sans"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../overrides/stylesheets/custom_theme.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -68,10 +68,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="black" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="ethereum-blue" data-md-color-accent="deep-orange">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -80,65 +82,141 @@
     <div data-md-component="skip">
       
         
-        <a href="#beta-block" class="md-skip">
+        <a href="#rpc-methods-available" class="md-skip">
           Skip to content
         </a>
       
     </div>
     <div data-md-component="announce">
       
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            
-            
-  <!-- Add announcement here, including arbitrary HTML -->
-  <title>🚧 Under Construction</title>
-
-          </div>
-          
-        </aside>
-      
     </div>
     
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  This documentation is not for the latest stable version of MEV Auction.
+  <a href="../../latest-release/">
+    <strong>Click here for the latest release documentation.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
     
       
 
-<header class="md-header" data-md-component="header">
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-  <nav class="md-header-nav md-grid" aria-label="header.title">
-    <a href="https://mevauction.com/" title="MEV Auction" class="md-header-nav__button md-logo" aria-label="MEV Auction">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MEV Auction" class="md-header__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             MEV Auction
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               API Reference
             
           </span>
         </div>
-      
+      </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
     
-      <div class="md-header-nav__source">
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="ethereum-blue" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="ethereum-blue" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
         <a href="https://github.com/MEV-Protocol/platform-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     MEV-Protocol/platform-docs
@@ -147,6 +225,177 @@
       </div>
     
   </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Developers/" class="md-tabs__link">
+          
+  
+    
+  
+  Developers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Learning/flashbots-comparison/" class="md-tabs__link">
+          
+  
+    
+  
+  Learning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Clients/" class="md-tabs__link">
+          
+  
+    
+  
+  Clients
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Relay/" class="md-tabs__link">
+          
+  
+    
+  
+  Relay
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Reference/contract_design/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Legal/" class="md-tabs__link">
+          
+  
+    
+  
+  Legal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -164,25 +413,28 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--primary" aria-label="nav.title" data-md-level="0">
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://mevauction.com/" title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction">
+    <a href=".." title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    <a href="https://mevauction.com/"
-       title="MEV Auction">
-      MEV Auction
-    </a>
+    MEV Auction
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/MEV-Protocol/platform-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     MEV-Protocol/platform-docs
@@ -194,58 +446,1357 @@
     
       
       
-      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
 
+    
+  </span>
+  
+  
 
-
+      </a>
+    </li>
+  
 
     
       
       
+  
+  
+  
+  
+    
+    
       
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Developers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Developers
+  
 
+    
+  </span>
+  
+  
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developers
+  
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developers/interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developers/builders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Builders & Searchers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developers/testnet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Testnet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developers/payment-methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Payment Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developers/sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    SDK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
 
     
       
       
+  
+  
+  
+  
+    
+    
       
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning
+  
 
+    
+  </span>
+  
+  
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learning
+  
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Learning/flashbots-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashbots Comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Learning/aup_auction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Auction Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Learning/Forward-Contracts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Forward Contracts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
 
     
       
       
+  
+  
+  
+  
+    
+    
       
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Clients/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Clients
+  
 
+    
+  </span>
+  
+  
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Clients
+  
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Clients/clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Clients
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Clients/validators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Validators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Clients/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Clients/accounting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Clients/relay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Relay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
 
     
       
       
+  
+  
+  
+  
+    
+    
       
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Relay/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Relay
+  
 
+    
+  </span>
+  
+  
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Relay
+  
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Relay/captive-insurance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Captive Insurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://securerpc.com" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    SecureRPC Relay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
 
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
       
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
 
+    
+  </span>
+  
+  
 
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API
+  
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="relay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Relay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="self-report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Validator Self Report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="beta-auction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Beta Auction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bundle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Bundle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="signature-scheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Signature Scheme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
 
     
       
       
+  
+  
+  
+  
+    
+    
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
 
+    
+  </span>
+  
+  
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reference/contract_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Contract Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reference/contract_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Contract Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reference/glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reference/rpc-payload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    RPC Payload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reference/constants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Constant Values
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reference/erc6909/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERC 6909
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Legal/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Legal/CDD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Legal/Content-Disclaimer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Content Disclaimer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Legal/Disclosure-Statement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Disclosure Statement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
 
     
   </ul>
@@ -272,7 +1823,7 @@
         
   
     <li class="md-path__item">
-      <a href="../index.html" class="md-path__link">
+      <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
     Home
@@ -289,7 +1840,7 @@
     
     
       <li class="md-path__item">
-        <a href="index.html" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
     API
@@ -311,20 +1862,188 @@
 
 
   
-    <a href="https://github.com/MEV-Protocol/platform-docs/edit/master/docs/api/index.md" title="Edit this page" class="md-content__button md-icon">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
-    </a>
-  
   
 
 
-  <h1>RPC</h1>
+  <h1>Overview</h1>
 
-<h2 id="beta-block">Beta Block<a class="headerlink" href="#beta-block" title="Permanent link">&para;</a></h2>
-<h2 id="relay">Relay<a class="headerlink" href="#relay" title="Permanent link">&para;</a></h2>
-<h2 id="bundle-submission">Bundle Submission<a class="headerlink" href="#bundle-submission" title="Permanent link">&para;</a></h2>
-<h2 id="signature-scheme">Signature Scheme<a class="headerlink" href="#signature-scheme" title="Permanent link">&para;</a></h2>
+<p>API paths to resources are generally broken into multiple segments,</p>
+<p><code>{scheme}://{host}/{version}/{category}/[{pathSegment}][?{query}]</code>:</p>
+<ul>
+<li><code>version</code>: can be v1.0 or beta.</li>
+<li><code>category</code>: is a logical grouping of APIs into top-level categories.</li>
+<li><code>pathSegment</code>: is one or many navigation segments that can address an
+    entity, collection of entities, property, or operation available for an
+    entity.</li>
+<li><code>query</code>: string must follow the OData standard for query representations</li>
+</ul>
+<h2 id="rpc-methods-available">RPC Methods Available<a class="headerlink" href="#rpc-methods-available" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>RPC Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>eth_blockNumber</code></td>
+<td>Returns the number of the most recent block.</td>
+</tr>
+<tr>
+<td><code>eth_call</code></td>
+<td>Executes a new message call immediately without creating a transaction on the block chain.</td>
+</tr>
+<tr>
+<td><code>eth_estimateGas</code></td>
+<td>Estimates the amount of gas required to execute a transaction.</td>
+</tr>
+<tr>
+<td><code>eth_gasPrice</code></td>
+<td>Returns the current price per gas in wei.</td>
+</tr>
+<tr>
+<td><code>eth_getBalance</code></td>
+<td>Returns the balance of the account of given address.</td>
+</tr>
+<tr>
+<td><code>eth_getBlockByHash</code></td>
+<td>Returns information about a block by hash.</td>
+</tr>
+<tr>
+<td><code>eth_getBlockByNumber</code></td>
+<td>Returns information about a block by block number.</td>
+</tr>
+<tr>
+<td><code>eth_getBlockTransactionCountByHash</code></td>
+<td>Returns the number of transactions in a block from a block matching the given block hash.</td>
+</tr>
+<tr>
+<td><code>eth_getBlockTransactionCountByNumber</code></td>
+<td>Returns the number of transactions in a block matching the given block number.</td>
+</tr>
+<tr>
+<td><code>eth_getCode</code></td>
+<td>Returns the code at a given address.</td>
+</tr>
+<tr>
+<td><code>eth_getStorageAt</code></td>
+<td>Returns the value from a storage position at a given address.</td>
+</tr>
+<tr>
+<td><code>eth_getTransactionByBlockHashAndIndex</code></td>
+<td>Returns information about a transaction by block hash and transaction index position.</td>
+</tr>
+<tr>
+<td><code>eth_getTransactionByBlockNumberAndIndex</code></td>
+<td>Returns information about a transaction by block number and transaction index position.</td>
+</tr>
+<tr>
+<td><code>eth_getTransactionByHash</code></td>
+<td>Returns information about a transaction requested by transaction hash.</td>
+</tr>
+<tr>
+<td><code>eth_getTransactionCount</code></td>
+<td>Returns the number of transactions sent from an address.</td>
+</tr>
+<tr>
+<td><code>eth_getTransactionReceipt</code></td>
+<td>Returns the receipt of a transaction by transaction hash.</td>
+</tr>
+<tr>
+<td><code>eth_getUncleByBlockHashAndIndex</code></td>
+<td>Returns information about an uncle of a block by hash and uncle index position.</td>
+</tr>
+<tr>
+<td><code>eth_getUncleByBlockNumberAndIndex</code></td>
+<td>Returns information about an uncle of a block by block number and uncle index position.</td>
+</tr>
+<tr>
+<td><code>eth_getUncleCountByBlockHash</code></td>
+<td>Returns the number of uncles in a block from a block matching the given block hash.</td>
+</tr>
+<tr>
+<td><code>eth_getUncleCountByBlockNumber</code></td>
+<td>Returns the number of uncles in a block from a block matching the given block number.</td>
+</tr>
+<tr>
+<td><code>eth_sign</code></td>
+<td>Signs data with a given address.</td>
+</tr>
+<tr>
+<td><code>eth_signTypedData</code></td>
+<td>Signs typed data with a given address (EIP-712).</td>
+</tr>
+<tr>
+<td><code>eth_getLogs</code></td>
+<td>Returns an array of logs matching a specified filter condition.</td>
+</tr>
+<tr>
+<td><code>net_version</code></td>
+<td>Returns the current network protocol version.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="api-rate-limiting">API Rate Limiting<a class="headerlink" href="#api-rate-limiting" title="Permanent link">&para;</a></h2>
+<p>If you receive a rate limit error, you should stop making requests temporarily
+according to these guidelines:</p>
+<p>Continuing to make requests while you are rate limited may result in the banning
+of you, your family, and possibly your entire country.</p>
+<h2 id="exceeding-the-rate-limit">Exceeding the rate limit<a class="headerlink" href="#exceeding-the-rate-limit" title="Permanent link">&para;</a></h2>
+<h4 id="80-requests-per-minute-is-the-public-default">80 requests per minute is the public default<a class="headerlink" href="#80-requests-per-minute-is-the-public-default" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Reach out to us via Telegram or Email to get a rate limit increase if needed.</p>
+</div>
+<p>If you exceed your primary rate limit, you will receive a <code>403</code> or <code>429</code>
+response, <del>and the <code>x-ratelimit-remaining</code> header will be <code>0</code>. You should not
+retry your request until after the time specified by the <code>x-ratelimit-reset</code>
+header.</del></p>
+<p>If you exceed a secondary rate limit, you will receive a <code>403</code> or <code>429</code> response
+and an error message that indicates that you exceeded a secondary rate limit.</p>
+<p><del>If the <code>retry-after</code> response header is present, you should not retry your
+request until after that many seconds has elapsed. If the
+<code>x-ratelimit-remaining</code> header is <code>0</code>, you should not retry your request until
+after the time, in UTC epoch seconds, specified by the <code>x-ratelimit-reset</code>
+header.</del><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<!-- @private
+- If the `retry-after` response header is present, you should not retry your request until after that many seconds has elapsed.
+- If the `x-ratelimit-remaining` header is `0`, you should not make another request until after the time specified by the `x-ratelimit-reset` header. The `x-ratelimit-reset` header is in UTC epoch seconds.
+- Otherwise, wait for at least one minute before retrying. If your request continues to fail due to a secondary rate limit, wait for an exponentially increasing amount of time between retries, and throw an error after a specific number of retries.
+
+## Checking the status of your rate limit
+
+You can use the headers that are sent with each response to determine the current status of your primary rate limit.
+
+| Header name             | Description                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| `x-ratelimit-limit`     | The maximum number of requests that you can make per hour                    |
+| `x-ratelimit-remaining` | The number of requests remaining in the current rate limit window            |
+| `x-ratelimit-used`      | The number of requests you have made in the current rate limit window        |
+| `x-ratelimit-reset`     | The time at which the current rate limit window resets, in UTC epoch seconds |
+| `x-ratelimit-resource`  | The rate limit resource that the request counted against.                    |
+
+You can also call the `GET /rate_limit` endpoint to check your rate limit. Calling this endpoint does not count against your primary rate limit, but it can count against your secondary rate limit. For more information, see "[REST API endpoints for rate limits](https://docs.github.com/en/rest/rate-limit/rate-limit)." When possible, you should use the rate limit response headers instead of calling the API to check your rate limit.
+
+There is not a way to check the status of your secondary rate limit.
+
+## Exceeding the rate limit
+
+If you exceed your primary rate limit, you will receive a `403` or `429` response, and the `x-ratelimit-remaining` header will be `0`. You should not retry your request until after the time specified by the `x-ratelimit-reset` header.
+
+If you exceed a secondary rate limit, you will receive a `403` or `429` response and an error message that indicates that you exceeded a secondary rate limit. If the `retry-after` response header is present, you should not retry your request until after that many seconds has elapsed. If the `x-ratelimit-remaining` header is `0`, you should not retry your request until after the time, in UTC epoch seconds, specified by the `x-ratelimit-reset` header. Otherwise, wait for at least one minute before retrying. If your request continues to fail due to a secondary rate limit, wait for an exponentially increasing amount of time between retries, and throw an error after a specific number of retries.
+
+Continuing to make requests while you are rate limited may result in the banning of you, your family, and possibly your entire country.
+-->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Response header for retry/rate limit is not yet available.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -358,68 +2077,66 @@
         
       </main>
       
-        
-
-<div class="feedback md-typeset">
-  Questions or feedback? You can discuss <a href="None">issues</a> and obtain free support on <a href="https://t.me/foldfinance">MEV Auction chat channel</a>.
-  <br/>
- <!-- For <a href="None">MEV </a> community support, join the Discord Server <a href="mailto:ops@manifoldfinance.com">ops@manifoldfinance.com</a> -->
-</div>
-
-<!-- Application footer -->
-<footer class="md-footer">
+        <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="footer.title">
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-          <a href="../Relay/captive-insurance.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
+          
+          <a href="../Relay/captive-insurance/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Captive Insurance">
+            <div class="md-footer__button md-icon">
+              
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
-            <div class="md-footer-nav__title">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
               <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
                 Captive Insurance
               </div>
             </div>
           </a>
         
         
-          <a href="relay.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
+          
+          <a href="relay/" class="md-footer__link md-footer__link--next" aria-label="Next: Relay">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
               <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 Relay
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
+            <div class="md-footer__button md-icon">
+              
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
             </div>
           </a>
         
       </nav>
-    </div>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a class="logo" href="/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌀</text></svg>">
+</a>
+<p>
+  &#169; 2024 The Contributors. Documentation distributed under
+  <a href="https://creativecommons.org/licenses/by-nc-nd/2.5/">CC-BY-NC-ND-2.5</a>.
+</p>
 
-      <!-- Copyright and theme information -->
-      <div class="md-footer-copyright" style="padding-top: 0px; padding-bottom: 0px;">
-        
-          <div class="md-footer-copyright__highlight">
-            Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
-          </div>
-        
-        Hack the Planet
-        </a>
-      </div>
-      <div class="md-social">
+    </div>
+  
   
 </div>
+      
     </div>
   </div>
 </footer>
@@ -432,18 +2149,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "toc.integrate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "search.suggest", "search.share", "search.highlight", "content.action.edit"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "toc.integrate", "content.footnote.tooltips", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetchn", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.cd25cebc.min.js"></script>
-      
-        <script src="../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-        <script src="../javascripts/shortcuts.js"></script>
+      <script src="../assets/javascripts/bundle.e1f28405.min.js"></script>
       
     
   </body>
